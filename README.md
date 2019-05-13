@@ -161,15 +161,16 @@ When you connect to the TCP interface of the **Auditor**, you should receive an 
 | #  | Topic |
 | ---  | ---  |
 |Question | With Node.js, how can we listen for UDP datagrams in a multicast group? |
-| | *Enter your response here...*  |
+| | *We use a standard Node.js, create a datagram socket and use it to listen for datargrams published in the multicast group
+by musicians and containing measures*  |
 |Question | How can we use the `Map` built-in object introduced in ECMAScript 6 to implement a **dictionary**?  |
-| | *Enter your response here...* |
+| | *var map = new Map(); à remplir avec les messages qui arrivent du multicast* |
 |Question | How can we use the `Moment.js` npm module to help us with **date manipulations** and formatting?  |
-| | *Enter your response here...* |
+| | *moment().format()* |
 |Question | When and how do we **get rid of inactive players**?  |
-| | *Enter your response here...* |
+| | *on check chaque secondes si un musicien est inactif (inactif a partir de 5 secondes dans l'appli)* |
 |Question | How do I implement a **simple TCP server** in Node.js?  |
-| | *Enter your response here...* |
+| | *require('net')* |
 
 
 ## Task 5: package the "auditor" app in a Docker image
@@ -177,7 +178,7 @@ When you connect to the TCP interface of the **Auditor**, you should receive an 
 | #  | Topic |
 | ---  | --- |
 |Question | How do we validate that the whole system works, once we have built our Docker image? |
-| | *Enter your response here...* |
+| | *on lance plusieurs containers musiciens qui vont jouer des sons que l'on va écouter avec Auditor. Il faut checker que les sons correspondent avec les instruments (pas vraiment trouvé la bonne manière de le faire dans mon appli du coup j'ai quelque chose de fonctionnel mais pas forcément juste...)* |
 
 
 ## Constraints
